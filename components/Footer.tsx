@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center text-gray-500 text-xs sm:text-sm">
           <p>&copy; 2025 Venda Experience. All rights reserved.</p>
           <p className="mt-2 flex items-center justify-center gap-1">
-            Made with <FontAwesomeIcon icon={faHeart} className="text-sa-red" /> in South Africa 🇿🇦
+            Made with <FontAwesomeIcon icon={faHeart} className="text-sa-red" /> By Nexora Technologiies
           </p>
         </div>
       </div>

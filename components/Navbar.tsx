@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 const Navbar = () => {
@@ -35,26 +35,30 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white shadow-lg py-2' 
-        : 'bg-transparent py-4'
+        : 'bg-transparent py-3 sm:py-4'
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <button onClick={() => scrollToSection('home')} className="flex items-center gap-3">
+        <button onClick={() => scrollToSection('home')} className="flex items-center gap-2 sm:gap-3">
           <img
             src="/logo.png"
             alt="Venda Experience"
-            className={`transition-all duration-300 ${isScrolled ? 'w-10 h-10' : 'w-12 h-12'}`}
+            className={`transition-all duration-300 ${isScrolled ? 'w-8 h-8 sm:w-10 sm:h-10' : 'w-10 h-10 sm:w-12 sm:h-12'}`}
           />
-         
+          <span className={`font-bold font-montserrat text-sm sm:text-base transition-colors duration-300 ${
+            isScrolled ? 'text-gray-900' : 'text-white'
+          }`}>
+            Venda<span className="text-sa-gold">XP</span>
+          </span>
         </button>
 
         {/* Desktop Nav */}
-        <ul className="hidden lg:flex items-center gap-8">
+        <ul className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navLinks.map((item) => (
             <li key={item.id}>
               <button
                 onClick={() => scrollToSection(item.id)}
-                className={`font-medium transition-colors duration-300 hover:text-sa-gold ${
+                className={`font-medium text-sm transition-colors duration-300 hover:text-sa-gold ${
                   isScrolled ? 'text-gray-700' : 'text-white/90'
                 }`}
               >
@@ -65,16 +69,10 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop CTA */}
-        <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:0768850084" className={`flex items-center gap-2 font-medium transition-colors ${
-            isScrolled ? 'text-sa-green' : 'text-white'
-          }`}>
-            
-           
-          </a>
+        <div className="hidden lg:flex items-center">
           <a
             href="https://wa.me/27768850084"
-            className="bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 text-sm"
+            className="bg-green-500 hover:bg-green-600 text-white px-4 xl:px-5 py-2 xl:py-2.5 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 text-sm"
           >
             <FontAwesomeIcon icon={faWhatsapp} />
             WhatsApp
@@ -84,7 +82,8 @@ const Navbar = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className={`lg:hidden text-2xl transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'}`}
+          className={`lg:hidden text-xl sm:text-2xl transition-colors p-1 ${isScrolled ? 'text-gray-900' : 'text-white'}`}
+          aria-label="Toggle menu"
         >
           <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
         </button>
@@ -92,24 +91,24 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
-        isMobileMenuOpen ? 'max-h-96' : 'max-h-0'
+        isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
       }`}>
-        <div className="bg-white border-t py-4 px-4">
-          <ul className="space-y-3">
+        <div className="bg-white border-t py-3 sm:py-4 px-4 shadow-lg">
+          <ul className="space-y-1 sm:space-y-2">
             {navLinks.map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left text-gray-700 font-medium py-2 hover:text-sa-gold transition-colors"
+                  className="block w-full text-left text-gray-700 font-medium py-2 sm:py-2.5 px-2 hover:text-sa-gold hover:bg-gray-50 rounded-lg transition-colors text-sm sm:text-base"
                 >
                   {item.label}
                 </button>
               </li>
             ))}
-            <li className="pt-3 border-t">
+            <li className="pt-2 sm:pt-3 border-t mt-2">
               <a
                 href="https://wa.me/27768850084"
-                className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-2"
+                className="bg-green-500 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-semibold flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <FontAwesomeIcon icon={faWhatsapp} />
                 WhatsApp Us
