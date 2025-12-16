@@ -39,17 +39,12 @@ const Navbar = () => {
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <button onClick={() => scrollToSection('home')} className="flex items-center gap-2 sm:gap-3">
+        <button onClick={() => scrollToSection('home')}>
           <img
             src="/logo.png"
             alt="Venda Experience"
-            className={`transition-all duration-300 ${isScrolled ? 'w-8 h-8 sm:w-10 sm:h-10' : 'w-10 h-10 sm:w-12 sm:h-12'}`}
+            className={`transition-all duration-300 ${isScrolled ? 'w-12 h-12 sm:w-14 sm:h-14' : 'w-14 h-14 sm:w-16 sm:h-16'}`}
           />
-          <span className={`font-bold font-montserrat text-sm sm:text-base transition-colors duration-300 ${
-            isScrolled ? 'text-gray-900' : 'text-white'
-          }`}>
-            Venda<span className="text-sa-gold">XP</span>
-          </span>
         </button>
 
         {/* Desktop Nav */}
