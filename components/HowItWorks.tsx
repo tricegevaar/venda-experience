@@ -81,7 +81,7 @@ const HowItWorks = () => {
           className="text-center"
         >
           <a
-            href="https://wa.me/2768850084"
+            href="https://wa.me/27768850084"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg"
           >
             <FontAwesomeIcon icon={faWhatsapp} className="text-xl" />

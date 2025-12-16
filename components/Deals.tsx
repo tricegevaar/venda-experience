@@ -51,7 +51,7 @@ const Deals = () => {
             </div>
 
             <a
-              href="https://wa.me/2768850084"
+              href="https://wa.me/27768850084"
               className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg"
             >
               <FontAwesomeIcon icon={faWhatsapp} className="text-xl" />

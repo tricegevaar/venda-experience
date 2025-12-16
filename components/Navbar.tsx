@@ -73,7 +73,7 @@ const Navbar = () => {
            
           </a>
           <a
-            href="https://wa.me/2768850084"
+            href="https://wa.me/27768850084"
             className="bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 text-sm"
           >
             <FontAwesomeIcon icon={faWhatsapp} />
@@ -108,7 +108,7 @@ const Navbar = () => {
             ))}
             <li className="pt-3 border-t">
               <a
-                href="https://wa.me/2768850084"
+                href="https://wa.me/27768850084"
                 className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-2"
               >
                 <FontAwesomeIcon icon={faWhatsapp} />

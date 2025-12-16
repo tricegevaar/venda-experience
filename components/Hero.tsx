@@ -76,7 +76,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
             >
               <a
-                href="https://wa.me/2768850084"
+                href="https://wa.me/27768850084"
                 className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center gap-3 transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/25"
               >
                 <FontAwesomeIcon icon={faWhatsapp} className="text-xl group-hover:scale-110 transition-transform" />

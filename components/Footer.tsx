@@ -83,7 +83,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faPhone} className="text-sa-gold" />
                 076 885 0084
               </a>
-              <a href="https://wa.me/2768850084" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm">
+              <a href="https://wa.me/27768850084" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm">
                 <FontAwesomeIcon icon={faWhatsapp} className="text-green-400" />
                 WhatsApp Us
               </a>
@@ -94,7 +94,7 @@ const Footer = () => {
             </div>
 
             <a
-              href="https://wa.me/2768850084"
+              href="https://wa.me/27768850084"
               className="mt-6 inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300"
             >
               <FontAwesomeIcon icon={faWhatsapp} />
