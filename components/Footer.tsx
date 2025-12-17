@@ -107,7 +107,15 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center text-gray-500 text-xs sm:text-sm">
           <p>&copy; 2025 Venda Experience. All rights reserved.</p>
           <p className="mt-2 flex items-center justify-center gap-1">
-            Made with <FontAwesomeIcon icon={faHeart} className="text-sa-red" /> By Nexora Technologiies
+            Made with <FontAwesomeIcon icon={faHeart} className="text-sa-red" /> by{' '}
+            <a 
+              href="https://nexora-technologiies.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sa-gold hover:text-sa-gold/80 transition-colors underline"
+            >
+              Nexora Technologies
+            </a>
           </p>
         </div>
       </div>
